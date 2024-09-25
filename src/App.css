@@ -1,38 +1,142 @@
-.App {
+
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color:#fff;
+  color: #17181f;
+
+}
+main{
+  max-width: 360px;
+  margin: 0 auto;
+  
+}
+h1{
   text-align: center;
+  color: #17181f;
+  margin: 0;
+}
+h2{
+  margin-top: -20px;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div.transactions{
+  margin-top: 5px;
+
+}
+div.transaction{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+div.price{
+  text-align: end;
+  font-size: 1.3rem;
+}
+.name{
+  font-size: 1.5rem;
+}
+.datetime{
+  font-size: 0.75rem;
+}
+.red{
+  color: red;
+}
+.green{
+  color: green;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.new-transaction-button {
+  background-color: #008CBA; /* Blue */
+}
+
+.show-transaction-button {
+  background-color: #4CAF50; /* Green */
+}
+
+.details {
+  display: flex;
+  justify-content: space-between; 
+  width: fit-content; 
+  margin: 10px auto;
+}
+
+.income,
+.expense {
+  padding: 0 50px   0 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center; 
+}
+
+.price {
+  font-weight: bold; 
+}
+
+.new-transaction {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 350px;
+  margin-bottom: 15px;
+}
+
+.new-transaction label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.new-transaction input[type="text"],
+.new-transaction input[type="datetime-local"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.new-transaction button {
+  padding: 12px 20px;
+  background-color: #4CAF50;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.new-transaction button:hover {
+  background-color: #3e8e41;
+}
+.reduced-opacity-placeholder::placeholder {
+  opacity: 0.2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
+
+
